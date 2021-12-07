@@ -13,6 +13,7 @@ export class AppController {
 
   @Get('/day-format')
   getDayFormatFromUtil() {
+    // test
     return dayFormat();
   }
 }
