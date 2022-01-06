@@ -11,7 +11,6 @@ pipeline {
         stage('Pre-Build') {
             steps {
                 echo "Build Started"
-                slackSend(color: '#008000', message: "Build Started: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})", channel: "#flh-cloud-service")
             }
         }
     }
